@@ -1,0 +1,245 @@
+{
+  "nav": {
+    "pharma": "Pharmaceuticals",
+    "healthtech": "HealthTech",
+    "quality": "Quality",
+    "about": "About Us",
+    "contact": "Contact",
+    "partner": "Partner With Us",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Est. on the Routes of the Silk Road",
+    "headline": "Advancing Innovative Healthcare.",
+    "subheadline": "Caravans once carried life-saving remedies across continents. Today, Zariaspa Limited traverses those same enduring corridors to supply the region with Tier-1 pharmaceuticals, in-vitro diagnostics, and cutting-edge healthtech from the world’s most trusted OEMs.",
+    "stats": [
+      "Tier-1 Global OEMs",
+      "100% GDP-Compliant Custody",
+      "ISO 13485 Certified QMS",
+      "End-to-End Pharmacovigilance"
+    ],
+    "ctaPrimary": "Explore Pharmaceuticals",
+    "ctaSecondary": "Explore HealthTech"
+  },
+  "home": {
+    "map": {
+      "headline": "Est. on the Routes of the Silk Road",
+      "body": "From advanced GMP-certified laboratories in Europe and Asia to our Kabul headquarters, we ensure every imported modality carries the same legacy of trust that built the original trade routes."
+    },
+    "valueProps": {
+      "pharma": {
+        "title": "Pharmaceuticals",
+        "headline": "Securing the Medicine Supply Chain.",
+        "body": "Direct-to-manufacturer procurement of essential medicines and temperature-controlled biologics.",
+        "cta": "Explore Pharmaceuticals"
+      },
+      "healthtech": {
+        "title": "HealthTech",
+        "headline": "Equipping the Future of Care.",
+        "body": "Turnkey provisioning of capital diagnostic equipment and integrated POCT ecosystems.",
+        "cta": "Explore HealthTech"
+      },
+      "compliance": {
+        "title": "Regulatory & Compliance",
+        "headline": "Unlocking Market Access.",
+        "body": "Seamlessly navigating MoPH Afghanistan, WHO, and EU GDP frameworks. Our in-house regulatory affairs desk ensures fully compliant, frictionless market entry for global therapeutic and diagnostic innovations.",
+        "cta": "Explore Quality & Provenance"
+      },
+      "standards": {
+        "title": "Cold-Chain & Provenance",
+        "headline": "Guaranteeing Clinical Efficacy.",
+        "body": "Eradicating gray-market vulnerabilities through rigorous origin auditing and continuous 24/7 active cold-chain telemetry, safeguarding molecular integrity from global laboratory to local patient.",
+        "cta": "Discover Our Standards"
+      }
+    }
+  },
+  "bento": {
+    "eyebrow": "Solutions for a connected world",
+    "headline1": "A modern caravan",
+    "headline2": "for innovation.",
+    "intro": "From hospital-grade imaging to last-mile pharma — engineered for compliance, speed, and the same provenance that built the original Silk Road.",
+    "via": "via",
+    "explore": "Explore",
+    "tiles": {
+      "imaging": {
+        "eyebrow": "01 — Imaging",
+        "title": "Medical Equipment",
+        "desc": "Procurement and white-glove deployment of MRI, CT, ultrasound, and surgical systems from tier-1 OEMs across Europe and East Asia."
+      },
+      "pharma": {
+        "eyebrow": "02 — Pharma",
+        "title": "Supply Chain",
+        "desc": "Validated cold-chain corridors with real-time temperature & GPS provenance."
+      },
+      "healthtech": {
+        "eyebrow": "03 — HealthTech",
+        "title": "Healthcare Tech",
+        "desc": "Diagnostics, IoT devices, and hospital information systems integration."
+      },
+      "compliance": {
+        "eyebrow": "04 — Compliance",
+        "title": "Regulatory Affairs",
+        "desc": "WHO, ISO 13485, GDP & MoPH alignment — handled end-to-end by our affairs desk."
+      },
+      "infra": {
+        "eyebrow": "05 — Infrastructure",
+        "title": "Cold-Chain Network",
+        "desc": "Pharmaceutical-grade storage with 2–8°C and –20°C zones across Kabul, Dubai, and Samarkand hubs."
+      }
+    },
+    "routes": {
+      "imaging": "Frankfurt → Kabul",
+      "pharma": "Istanbul → Kabul",
+      "healthtech": "Xi'an → Kashgar",
+      "compliance": "Geneva ↔ Kabul",
+      "infra": "Samarkand · Dubai · Kabul"
+    }
+  },
+  "trust": {
+    "eyebrow": "Seal of trust · Certified · Aligned"
+  },
+  "common": {
+    "back": "Back to home"
+  },
+  "pages": {
+    "pharma": {
+      "headline": "Validated Therapeutics for Critical Care.",
+      "body": "We bridge the gap between global pharmaceutical innovators and regional healthcare systems. By strictly adhering to direct-sourcing models with research-driven laboratories, Zariaspa guarantees the bioavailability, safety, and efficacy of every formulation we import. We actively combat gray-market vulnerabilities by securing the supply chain at the source.",
+      "badge": "Direct-to-Manufacturer Procurement. Zero Tolerance for Counterfeits.",
+      "areas": {
+        "essential": {
+          "title": "Essential Medicines & Antimicrobials",
+          "body": "Reliable supply continuity for broad-spectrum antibiotics, analgesics, and crucial WHO formulary staples to prevent stockouts in acute care settings."
+        },
+        "biologics": {
+          "title": "Biologics & Cold-Chain",
+          "body": "Safeguarding temperature-sensitive molecules, including vaccines and insulin, with validated 2–8°C and –20°C active and passive thermal protection throughout the transit corridor."
+        },
+        "specialty": {
+          "title": "Specialty Therapeutics",
+          "body": "Targeted interventions for chronic conditions, including oncology protocols, cardiovascular management, and endocrinology formulations."
+        },
+        "maternal": {
+          "title": "Maternal & Pediatric Health",
+          "body": "Sourcing specialized dosages, prenatal supplements, and pediatric formulations to support critical demographic needs."
+        }
+      }
+    },
+    "healthtech": {
+      "headline": "Next-Generation Modalities. Trusted Global OEMs.",
+      "body": "Modern diagnostics demand uncompromising precision. Zariaspa Limited partners exclusively with recognized, Tier-1 manufacturers to provision hospitals and diagnostic centers with the capital equipment and healthtech infrastructure required for definitive clinical decision-making. We don't just deliver boxes; we deliver integrated clinical capabilities.",
+      "marquee": "Authorized Import Partner For:",
+      "modalities": {
+        "imaging": {
+          "title": "Advanced Diagnostic Imaging",
+          "body": "Procurement, site-planning, and white-glove deployment of high-resolution MRI, multi-slice CT, and advanced ultrasound systems from industry leaders."
+        },
+        "ivd": {
+          "title": "In-Vitro Diagnostics (IVD) & Laboratory",
+          "body": "Automated chemistry and hematology analyzers, continuous supply of stabilized reagents, and point-of-care testing (POCT) ecosystems designed for rapid clinical intervention."
+        },
+        "surgical": {
+          "title": "Surgical & Critical Care Infrastructure",
+          "body": "Outfitting modern operating theaters and ICUs with state-of-the-art anesthesia workstations, multi-parameter patient monitoring networks, and life-support ventilators."
+        },
+        "his": {
+          "title": "Health Information Systems (HIS)",
+          "body": "Facilitating the integration of hardware with digital health records, ensuring that diagnostic data flows securely and efficiently across the care continuum."
+        }
+      }
+    },
+    "quality": {
+      "headline": "Absolute Integrity. End-to-End Traceability.",
+      "body": "Clinical efficacy requires absolute environmental and regulatory control. Our proprietary import framework is engineered exclusively to mitigate risk, eliminate counterfeit exposure, and ensure total compliance with international healthcare directives.",
+      "pillars": {
+        "audit": {
+          "title": "Origin GMP Auditing",
+          "body": "Rigorous vetting of all international manufacturing partners and Active Pharmaceutical Ingredient (API) sourcing before onboarding."
+        },
+        "coldchain": {
+          "title": "Cold-Chain Custody & Telemetry",
+          "body": "Continuous 24/7 datalogging of sensitive shipments. Our logistics corridors utilize advanced thermal packaging and active monitoring to ensure zero temperature excursions."
+        },
+        "regulatory": {
+          "title": "Regulatory Affairs & MoPH Alignment",
+          "body": "Seamless alignment with EU GDP, WHO guidelines, and MoPH Afghanistan protocols. Our in-house regulatory desk handles all dossier submissions, import licensing, and compliance documentation."
+        },
+        "pharmacovigilance": {
+          "title": "Pharmacovigilance",
+          "body": "A commitment to post-market safety monitoring, ensuring any adverse events are reported and managed in accordance with global standards."
+        }
+      }
+    },
+    "about": {
+      "headline": "A Legacy of Global Connection.",
+      "heritage": {
+        "title": "The Heritage Narrative",
+        "body": "The original Silk Road was a conduit for human progress. It was here that early medical knowledge, botanical treatments, and rare remedies were exchanged between East and West. Zariaspa Limited is the modern continuation of this legacy. We look to historical nodes of commerce—from Frankfurt and Istanbul to Samarkand and Tehran—as our staging grounds for bringing modern clinical solutions into Afghanistan. Our focus is strictly on the future of patient care, but our roots are millennia deep."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "body": "To elevate the standard of care in the region by providing unbroken, direct access to the world’s most advanced pharmaceuticals and medical technologies."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "body": "To be the most trusted, compliant, and technologically advanced healthcare import partner in the market, eliminating supply chain vulnerabilities and improving patient outcomes."
+      }
+    },
+    "contact": {
+      "headline": "Partner with Zariaspa.",
+      "body": "Whether you are a Tier-1 OEM seeking a fully compliant, ISO-certified entry into the region, or a healthcare institution requiring reliable clinical infrastructure and therapeutic imports, our desk is ready.",
+      "form": {
+        "name": "Name",
+        "organization": "Organization",
+        "inquiryType": {
+          "label": "Inquiry Type",
+          "options": {
+            "pharma": "Pharmaceutical Sourcing",
+            "equipment": "Equipment Procurement",
+            "partnership": "OEM Partnership",
+            "general": "General Inquiry"
+          }
+        },
+        "message": "Message",
+        "submit": "Send Inquiry"
+      }
+    }
+  },
+  "footer": {
+    "tagline1": "Dispatches from the",
+    "tagline2": "Silk Road",
+    "newsletterDesc": "Quarterly briefings on med-tech procurement, regulatory shifts, and regional logistics across our caravan network.",
+    "emailPlaceholder": "you@hospital.org",
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed",
+    "address": "Wazir Akbar Khan, Kabul, Afghanistan",
+    "cols": {
+      "capabilities": "Solutions",
+      "network": "Caravan Network",
+      "company": "Company"
+    },
+    "items": {
+      "medEquipment": "Medical Equipment",
+      "pharmaSupply": "Pharma Supply Chain",
+      "healthtech": "Healthcare Tech",
+      "coldchain": "Cold-Chain Network",
+      "regulatory": "Regulatory",
+      "kabulHQ": "Kabul HQ",
+      "dubaiHub": "Dubai Hub",
+      "istanbulOffice": "Istanbul Office",
+      "samarkandLiaison": "Samarkand Liaison",
+      "frankfurtDesk": "Frankfurt Desk",
+      "about": "About",
+      "leadership": "Leadership",
+      "compliance": "Compliance",
+      "press": "Press",
+      "careers": "Careers"
+    },
+    "legal": {
+      "rights": "Zariaspa Limited — Carrying medicine along ancient routes.",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "compliance": "Compliance"
+    }
+  }
+}
