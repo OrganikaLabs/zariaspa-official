@@ -1,6 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Activity, Truck, Package, ShieldCheck, Thermometer, ArrowUpRight, ArrowLeft } from "lucide-react";
+import {
+  Activity,
+  Truck,
+  Package,
+  ShieldCheck,
+  Thermometer,
+  ArrowUpRight,
+  ArrowLeft,
+} from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";

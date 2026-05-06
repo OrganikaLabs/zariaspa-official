@@ -79,8 +79,7 @@ export function PageLayout(props: PageLayoutProps) {
 
             <Reveal delay={200}>
               <h1 className="font-serif-display tracking-display mt-5 text-balance text-5xl font-medium leading-[1.02] text-parchment md:text-7xl lg:text-[88px]">
-                {t(k("title"))}{" "}
-                <span className="italic text-saffron">{t(k("italic"))}</span>
+                {t(k("title"))} <span className="italic text-saffron">{t(k("italic"))}</span>
               </h1>
             </Reveal>
 

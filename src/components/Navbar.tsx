@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Globe, ChevronDown, Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGS } from "@/i18n";
-const zariaspaLogo = "/og-image.png";
+import zariaspaLogo from "@/assets/zariaspa-logo.png";
 
 export function Navbar() {
   const { t, i18n } = useTranslation();
