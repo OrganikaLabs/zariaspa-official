@@ -50,51 +50,46 @@ export function PageLayout(props: PageLayoutProps) {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative isolate overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24">
-        <div className="absolute inset-0 paper-texture opacity-60" aria-hidden="true" />
-        <div className="absolute inset-0 map-grid opacity-30" aria-hidden="true" />
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10">
-          <Reveal>
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-ink-soft transition-colors hover:text-terracotta"
-            >
-              <ArrowLeft className="h-3.5 w-3.5 rtl:rotate-180" />
-              {t("common.back")} · Zariaspa
-            </Link>
-          </Reveal>
+      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
+        <img
+          src={hero.src}
+          alt={hero.alt}
+          className="h-full w-full object-cover brightness-50"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-parchment via-transparent to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <Reveal>
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-parchment/80 transition-colors hover:text-saffron"
+              >
+                <ArrowLeft className="h-3.5 w-3.5 rtl:rotate-180" />
+                {t("common.back")} · Zariaspa
+              </Link>
+            </Reveal>
 
-          <Reveal delay={120}>
-            <p className="mt-10 flex items-center gap-3 text-[11px] font-medium tracking-[0.28em] text-terracotta">
-              <span className="route-dash h-px w-10" />
-              {t(k("eyebrow"))}
-            </p>
-          </Reveal>
+            <Reveal delay={120}>
+              <p className="mt-10 flex items-center gap-3 text-[11px] font-medium tracking-[0.28em] text-saffron">
+                <span className="route-dash h-px w-10 bg-saffron" />
+                {t(k("eyebrow"))}
+              </p>
+            </Reveal>
 
-          <Reveal delay={200}>
-            <h1 className="font-serif-display tracking-display mt-5 text-balance text-5xl font-medium leading-[1.02] md:text-7xl lg:text-[88px]">
-              {t(k("title"))} <span className="italic text-terracotta">{t(k("italic"))}</span>
-            </h1>
-          </Reveal>
+            <Reveal delay={200}>
+              <h1 className="font-serif-display tracking-display mt-5 text-balance text-5xl font-medium leading-[1.02] text-parchment md:text-7xl lg:text-[88px]">
+                {t(k("title"))}{" "}
+                <span className="italic text-saffron">{t(k("italic"))}</span>
+              </h1>
+            </Reveal>
 
-          <Reveal delay={320}>
-            <p className="mt-8 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t(k("lede"))}
-            </p>
-          </Reveal>
-
-          <Reveal delay={440}>
-            <div className="mt-14 overflow-hidden rounded-3xl border border-hairline shadow-[var(--shadow-elevated)]">
-              <img
-                src={hero.src}
-                alt={hero.alt}
-                width={hero.w}
-                height={hero.h}
-                loading="eager"
-                className="h-[42vh] min-h-[320px] w-full object-cover md:h-[58vh]"
-              />
-            </div>
-          </Reveal>
+            <Reveal delay={320}>
+              <p className="mt-8 max-w-2xl text-base leading-relaxed text-parchment/80 md:text-lg">
+                {t(k("lede"))}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
 

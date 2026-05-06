@@ -1,12 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { useHtmlLangDir } from "@/i18n/useHtmlLangDir";
 import { useTranslation } from "react-i18next";
 import "@/i18n";
+import img1 from "@/assets/pages/contact-1.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -32,25 +33,36 @@ function ContactPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-16 md:pt-48 md:pb-32">
-        <div className="absolute inset-0 paper-texture opacity-60" aria-hidden="true" />
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10 text-center">
-          <Reveal>
-            <h1 className="font-serif-display tracking-display text-balance text-6xl font-medium leading-[1.02] md:text-8xl">
-              {t("pages.contact.headline")}
-            </h1>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl">
-              {t("pages.contact.body")}
-            </p>
-          </Reveal>
+      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
+        <img
+          src={img1}
+          alt="Contact Zariaspa"
+          className="h-full w-full object-cover brightness-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-parchment via-transparent to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <Reveal>
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-parchment/80 transition-colors hover:text-saffron"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" />
+                {t("common.back")} · Zariaspa
+              </Link>
+            </Reveal>
+            <Reveal delay={100}>
+              <h1 className="font-serif-display tracking-display mt-8 text-5xl font-medium text-parchment md:text-7xl lg:text-8xl">
+                {t("pages.contact.headline")}
+              </h1>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* Contact Form & Info */}
       <section className="relative bg-parchment pb-24 md:pb-32">
-        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:px-10 lg:grid-cols-12">
+        <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pt-10 pb-0 md:px-10 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <form
               onSubmit={(e) => {
@@ -130,14 +142,16 @@ function ContactPage() {
 
           <Reveal delay={120} className="lg:col-span-5">
             <div className="h-full flex flex-col gap-8">
-              <div className="flex-1 overflow-hidden rounded-3xl border border-hairline bg-ink/5 relative grayscale-[0.5]">
-                <div className="absolute inset-0 bg-map opacity-50" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex flex-col items-center">
-                    <MapPin className="h-10 w-10 text-terracotta animate-bounce" />
-                    <div className="mt-2 glass-dark rounded-full px-4 py-2 text-xs font-bold text-parchment">
-                      Wazir Akbar Khan, Kabul
-                    </div>
+              <div className="flex-1 overflow-hidden rounded-3xl border border-hairline relative">
+                <img
+                  src="/src/assets/kabul-map.png"
+                  alt="Map of Kabul"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 pointer-events-none bg-ink/10 mix-blend-multiply" />
+                <div className="absolute bottom-6 left-6 flex flex-col items-start">
+                  <div className="glass-dark rounded-full px-4 py-2 text-[10px] font-bold tracking-widest text-parchment uppercase">
+                    Wazir Akbar Khan, Kabul
                   </div>
                 </div>
               </div>

@@ -1,11 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import { Activity, Truck, Package, ShieldCheck, Thermometer, ArrowUpRight } from "lucide-react";
+import { Activity, Truck, Package, ShieldCheck, Thermometer, ArrowUpRight, ArrowLeft } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { useHtmlLangDir } from "@/i18n/useHtmlLangDir";
 import "@/i18n";
+import tankerShip from "@/assets/pages/tanker-ship.jpg";
 
 export const Route = createFileRoute("/solutions/")({
   head: () => ({
@@ -36,27 +37,42 @@ function SolutionsIndex() {
   return (
     <main className="min-h-screen bg-parchment text-ink">
       <Navbar />
-      <section className="relative isolate overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24">
-        <div className="absolute inset-0 paper-texture opacity-60" aria-hidden="true" />
-        <div className="absolute inset-0 map-grid opacity-30" aria-hidden="true" />
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10">
-          <Reveal>
-            <p className="flex items-center gap-3 text-[11px] font-medium tracking-[0.28em] text-terracotta">
-              <span className="route-dash h-px w-10" />
-              {t("bento.eyebrow")}
-            </p>
-          </Reveal>
-          <Reveal delay={120}>
-            <h1 className="font-serif-display tracking-display mt-5 text-balance text-5xl font-medium leading-[1.02] md:text-7xl lg:text-[88px]">
-              {t("bento.headline1")}{" "}
-              <span className="italic text-terracotta">{t("bento.headline2")}</span>
-            </h1>
-          </Reveal>
-          <Reveal delay={240}>
-            <p className="mt-8 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
-              {t("bento.intro")}
-            </p>
-          </Reveal>
+      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
+        <img
+          src={tankerShip}
+          alt="Solutions Overview"
+          className="h-full w-full object-cover brightness-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-parchment via-transparent to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <Reveal>
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-parchment/80 transition-colors hover:text-saffron"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" />
+                {t("common.back")} · Zariaspa
+              </Link>
+            </Reveal>
+            <Reveal delay={120}>
+              <p className="mt-10 flex items-center gap-3 text-[11px] font-medium tracking-[0.28em] text-saffron">
+                <span className="route-dash h-px w-10 bg-saffron" />
+                {t("bento.eyebrow")}
+              </p>
+            </Reveal>
+            <Reveal delay={200}>
+              <h1 className="font-serif-display tracking-display mt-5 text-balance text-5xl font-medium leading-[1.02] text-parchment md:text-7xl lg:text-[88px]">
+                {t("bento.headline1")}{" "}
+                <span className="italic text-saffron">{t("bento.headline2")}</span>
+              </h1>
+            </Reveal>
+            <Reveal delay={320}>
+              <p className="mt-8 max-w-2xl text-base leading-relaxed text-parchment/80 md:text-lg">
+                {t("bento.intro")}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
 

@@ -53,7 +53,7 @@ function Quality() {
                 className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-parchment/80 transition-colors hover:text-saffron"
               >
                 <ArrowLeft className="h-3.5 w-3.5" />
-                Back · Zariaspa
+                {t("common.back")} · Zariaspa
               </Link>
             </Reveal>
             <Reveal delay={100}>

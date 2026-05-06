@@ -31,17 +31,26 @@ function About() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[50vh] min-h-[400px] w-full overflow-hidden">
+      <section className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
         <img
           src={img1}
           alt="Silk Road Heritage"
           className="h-full w-full object-cover brightness-50"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-parchment via-transparent to-transparent" />
-        <div className="absolute inset-0 flex flex-col justify-end pb-12 px-6 md:px-10">
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
           <div className="mx-auto w-full max-w-7xl">
             <Reveal>
-              <h1 className="font-serif-display tracking-display text-5xl font-medium text-ink md:text-7xl lg:text-9xl">
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] text-parchment/80 transition-colors hover:text-saffron"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" />
+                {t("common.back")} · Zariaspa
+              </Link>
+            </Reveal>
+            <Reveal delay={100}>
+              <h1 className="font-serif-display tracking-display mt-8 text-5xl font-medium text-parchment md:text-7xl lg:text-8xl">
                 {t("pages.about.headline")}
               </h1>
             </Reveal>
